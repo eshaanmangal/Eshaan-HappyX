@@ -1,0 +1,62 @@
+.header {
+    background-color: $color-292D39;
+    display: flex;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 2;
+    &__logo {
+        flex: 1;
+    }
+
+    &__userContainer {
+        position: relative;
+    }
+}
+
+.userContainer {
+    &__info {
+        position: relative;
+        display: flex;
+        margin-top: 3px;
+        &:after {
+            position: absolute;
+            content: '';
+            border-width: 0 2px 2px 0;
+            border-style: solid;
+            color: #ffffff;
+            width: 7px;
+            height: 7px;
+            right: 0;
+            top: 16px;
+            transform: rotate(45deg);
+        }
+        img {
+            width: 40px;
+            height: 40px;
+        }
+        span {
+            display: block;
+            padding: 10px 30px 10px 10px;
+            cursor: pointer;
+            text-transform: capitalize;
+        }
+        
+    }
+    &__dropdown {
+        position: absolute;
+        background: $color-292D39;
+        width: 160px;
+        right: 0;
+        top: 100%;
+        box-shadow: 0 0 10px $color-292D39;
+        border-radius: 0 0 3px 3px;
+        padding: 10px 0 0;
+
+        &__item {
+            display: block;
+            padding: 11px 15px;
+            border-top: solid 1px #181c28;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.mailerPage {
+    width: 100%;
+    height: 100%;
+    &__logo {
+        text-align: center;
+        padding: 15px;
+    }
+    &__image {
+        padding: 50px;
+        height: calc( 100% - 85px );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

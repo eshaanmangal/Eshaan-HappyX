@@ -1,0 +1,69 @@
+html, body, #root, .loginPage {
+    width: 100%;
+    height: 100%;
+}
+.loginPage {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 104%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        max-width: 390px;
+        margin: auto;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 20px;
+        line-height: 24px;
+        padding: 15px 0 20px;
+    }
+
+    &__error {
+        font-size: 12px;
+        color:#ff0000;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    &__inputField {
+        background: $color-ffffff;
+        border-radius: 4px;
+        width: 100%;
+        padding: 14px;
+        border: none;
+        font-size: 14px;
+        margin: 10px 0;
+        color: #333;
+    }    
+
+    &__button {
+        background-color: $color-9D92B2;
+        border-radius: 4px;
+        border: none;
+        width: 100%;
+        color: $color-ffffff;
+        padding: 10px;
+        margin-top: 30px;
+        font-size: 16px;
+        text-transform: uppercase;
+        cursor: pointer;
+        &:disabled {
+            cursor:not-allowed;
+        }
+    }
+
+    &__footer {
+        text-align: center;
+        color: #9D92B2;
+        font-size: 12px;
+        p {
+            padding: 5px 0;
+        }
+    }
+
+}

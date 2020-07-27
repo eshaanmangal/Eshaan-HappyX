@@ -1,0 +1,8 @@
+.reports {
+    padding:15px 15px 0;
+    margin-left: 15px;
+    width: calc( 50% - 8px );
+    &:first-child {
+        margin-left: 0;
+    }
+}

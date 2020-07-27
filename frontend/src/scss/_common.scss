@@ -1,0 +1,41 @@
+.commonbx {
+    background-color: $color-292D39;
+    border-radius: 5px;
+    float: left;
+    &__head {
+        padding-bottom: 13px;
+        display: flex;
+    }
+    &__select {
+        font-size: 13px;
+        color: $color-ffffff;
+        border:none;
+        background: $color-181C28;
+        border-radius: 3px;
+        padding: 5px 6px 5px 5px;
+    }
+    &__heading {
+        font-size: 16px;
+        flex: 1;
+    }
+    &__download {
+        margin-left: 5px;
+        cursor: pointer;
+    }
+    &__calender {
+        margin-left: 5px;
+        color: #000;
+        .react-daterange-picker__inputGroup,
+        .react-daterange-picker__range-divider,
+        .react-daterange-picker__clear-button {
+            display: none;
+        }
+        .react-daterange-picker__wrapper {
+            border: none;
+        }
+        .react-daterange-picker__button__icon {
+            stroke: #fff;
+        }
+        
+    }
+}
